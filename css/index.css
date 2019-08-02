@@ -1,1 +1,336 @@
-/* LESS needs to be processed */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
+  margin-top: 3.6rem;
+}
+nav a {
+  margin-left: 2rem;
+  color: #212529;
+  font-size: 1.6rem;
+  text-decoration-line: none;
+}
+.footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  background: #FFEBCD;
+}
+.footer p {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+.home .content-section {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.text-content {
+  width: 48%;
+  padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .text-content {
+    width: 100%;
+  }
+}
+.img-content {
+  width: 48%;
+  padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .img-content {
+    width: 100%;
+  }
+}
+.img-content img {
+  border-radius: 10px;
+}
+.text-content {
+  padding-left: 1%;
+  padding-right: 0;
+}
+.img-content {
+  padding-right: 1%;
+  padding-left: 0;
+}
+.content-destination {
+  width: 75%;
+  margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .content-destination {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+  }
+}
+.content-destination img {
+  border-radius: 10px;
+}
+.content-pick {
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
+  display: flex;
+  justify-content: space-between;
+}
+.content-pick .destination {
+  width: 30%;
+  margin-bottom: 30px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+header h1 {
+  margin-top: 2.1rem;
+}
+.btn {
+  width: 18.6rem;
+  height: 4rem;
+  border: 1px solid;
+  text-align: center;
+  padding-top: 1.2rem;
+  background-color: #17A2BB;
+  color: #FFFFFF;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .btn {
+    width: 34rem;
+    height: 4rem;
+    border: 1px solid;
+    text-align: center;
+    padding-top: 1.2rem;
+    background-color: #17A2BB;
+    color: #FFFFFF;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 500px) {
+  .top-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 1rem;
+  }
+}
+.top-content img {
+  border-top: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .top-content img {
+    width: 100%;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .content-section {
+    padding: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 500px) {
+  .inverse-content .img-content {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .content-pick {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    padding: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .content-pick .destination {
+    width: 96%;
+  }
+}
+@media (max-width: 500px) {
+  .content-pick .destination p {
+    width: 100%;
+  }
+}
