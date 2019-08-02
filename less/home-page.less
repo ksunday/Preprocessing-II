@@ -5,57 +5,210 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
     
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
-    }
-
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
-
-      img {
-        border-radius: 10px;
-      }
-    }
   }
+}
 
-  .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
 
-    .text-content {
-      padding-left: 1%;
-      padding-right: 0;
-    }
-
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
-    }
+.text-content {
+  width: 48%;
+  padding-right: 1%;
+  @media @mobile{
+    width:100%; 
+    
   }
+}
 
-  .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
-
+.img-content {
+  width: 48%;
+  padding-left: 1%;
+  @media @mobile{
+    width:100%; }
+    
     img {
       border-radius: 10px;
     }
   }
-
-  .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
-
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
+  
+  
+  
+  
+  .text-content {
+      padding-left: 1%;
+      padding-right: 0;
     }
-  }
-}// home
+    
+    .img-content {
+      padding-right: 1%;
+      padding-left: 0;
+    }
+    
+    
+    .content-destination {
+      width: 75%;
+      margin: 0 auto 30px;
+      @media @mobile{
+        width:100%; 
+        max-width: 100%; 
+        padding:1rem; 
+      }
+      img {
+        border-radius: 10px;
+      }
+    }
+    
+    .content-pick {
+      padding-top: 30px;
+      border-top: 2px dashed @navigation-border;
+      display: flex;
+      justify-content: space-between;
+      
+      .destination {
+        width: 30%;
+        margin-bottom: 30px;
+      }
+    }
+    // home
+    
+    header{
+      display:flex; 
+      justify-content: space-between; 
+      @media @mobile{
+        flex-direction: column; 
+        text-align: center; 
+      }
+      h1{
+        margin-top:2rem; 
+        
+      }
+      
+      
+    }
+    .btn{
+      
+      
+      .buttonmixin(18.6rem) 
+    }
+    @media @mobile{
+      .btn{
+        
+        .buttonmixin(34rem)
+      }
+    }
+    
+      
+      
+    .top-content{
+      @media @mobile{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        padding:1rem; 
+        padding:1rem; }
+
+      img{
+        border-top: 2px dashed @navigation-border;
+        @media @mobile{
+          width:100%; 
+          align-items:center; 
+        }
+      }
+    }
+    
+    .content-section{
+      @media @mobile{
+        padding:1rem; 
+      }
+    }
+    
+    
+
+    .inverse-content{
+      @media @mobile{
+        flex-direction: column-reverse; 
+      }
+      .img-content{
+        @media @mobile{
+          width:100%; 
+        }
+      }
+    }
+    .content-pick{
+      @media @mobile{
+        display:flex; 
+        flex-direction: column; 
+        margin-left:2rem; 
+        padding:3rem; 
+      }
+      .destination{
+        @media @mobile{
+          width:96%; 
+          
+        }
+        
+             
+          
+          p{
+            @media @mobile{
+              width:100%; 
+            }
+          }
+        }
+
+        
+      }
+    
+    // .home{
+    //   .content-section{
+    //     @media @mobile{
+    //       display:flex; 
+    //       flex-direction: column; 
+    //     }
+    //     .text-content{
+    //       @media @mobile{
+    //         width:100%; 
+            
+    //       }
+    //     }
+    //   }
+      
+    //   .content-section{
+    //     @media @mobile{
+    //       display:flex; 
+          
+    //       width:100%; 
+          
+    //     }
+    //     .text-content{
+    //       @media @mobile{
+    //         display:flex; 
+    //         width:100%;
+            
+    //         flex-direction: column; 
+            
+    //       }
+    //     }
+    //   }
+      
+      
+    //   .content-destination{
+    //     @media @mobile{
+    //       display:flex; 
+    //       flex-direction: column; 
+    //   }
+    // }
+    // .content-pick{
+    //   @media @mobile{
+    //     display:flex; 
+    //     flex-direction: column; 
+    //   }
+    // }
+    
+    // .inverse-content {
+    // padding-bottom: 30px;
+    //   border-bottom: 2px dashed @navigation-border;
+    //   @media @mobile{
+    //     display:flex; 
+    //     flex-direction: column-reverse; }
+    // 
+    
